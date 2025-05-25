@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevapTech.SimpleMediator", "LevapTech.SimpleMediator\LevapTech.SimpleMediator.csproj", "{4C091FB4-160D-7F91-C546-6BEA9092D0A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevapTech.SimpleMediator.Tests", "Tests\LevapTech.SimpleMediator.Tests\LevapTech.SimpleMediator.Tests.csproj", "{FDA239B8-07F2-48D2-BA94-ECF4A7E3ABC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4C091FB4-160D-7F91-C546-6BEA9092D0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C091FB4-160D-7F91-C546-6BEA9092D0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C091FB4-160D-7F91-C546-6BEA9092D0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA239B8-07F2-48D2-BA94-ECF4A7E3ABC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA239B8-07F2-48D2-BA94-ECF4A7E3ABC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA239B8-07F2-48D2-BA94-ECF4A7E3ABC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA239B8-07F2-48D2-BA94-ECF4A7E3ABC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
