@@ -10,6 +10,7 @@ public class SimpleMediator : ISimpleMediator
         _serviceProvider = serviceProvider;
     }
 
+    /// <inheritdoc />
     public async Task<TResult> SendAsync<TCommand, TResult>(TCommand command, CancellationToken cancellationToken = default)
         where TCommand : ICommand<TResult>
     {
@@ -17,6 +18,7 @@ public class SimpleMediator : ISimpleMediator
         return await ExecutePipeline<TCommand, TResult>(command, cancellationToken, () => handler.HandleAsync(command, cancellationToken));
     }
 
+    /// <inheritdoc />
     public async Task<TResult> QueryAsync<TQuery, TResult>(TQuery query, CancellationToken cancellationToken = default)
         where TQuery : IQuery<TResult>
     {
@@ -24,6 +26,7 @@ public class SimpleMediator : ISimpleMediator
         return await ExecutePipeline<TQuery, TResult>(query, cancellationToken, () => handler.HandleAsync(query, cancellationToken));
     }
 
+    /// <inheritdoc />
     public async Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken = default)
         where TEvent : IEvent
     {
