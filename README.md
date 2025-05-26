@@ -18,7 +18,7 @@ A lightweight, dependency-injected mediator library for .NET, supporting CQRS, P
 Add SimpleMediator and your handlers to the DI container:
 
 
-```
+```csharp
 using LevapTech.SimpleMediator;
 using LevapTech.SimpleMediator.Abstractions;
 
@@ -42,7 +42,7 @@ services.AddTransient<IPipelineBehavior<CreateOrderCommand, Guid>, LoggingBehavi
 ### 2. Define Commands, Queries, and Events
 
 
-```
+```csharp
 // Command
 public record CreateOrderCommand(string Product, int Quantity) : ICommand<Guid>;
 
@@ -59,7 +59,7 @@ public record OrderCreatedEvent(Guid OrderId) : IEvent;
 ### 3. Implement Handlers
 
 
-```
+```csharp
 // Command Handler
 public class CreateOrderCommandHandler : ICommandHandler<CreateOrderCommand, Guid>
 {
@@ -97,7 +97,7 @@ public class OrderCreatedEventHandler : IEventHandler<OrderCreatedEvent>
 ### 4. Use the Mediator
 
 
-```
+```csharp
 public class OrdersController : ControllerBase
 {
     private readonly ISimpleMediator _mediator;
@@ -132,7 +132,7 @@ public class OrdersController : ControllerBase
 Pipeline behaviors allow you to add cross-cutting logic (e.g., logging, validation):
 
 
-```
+```csharp
 public class LoggingBehavior<TRequest, TResult> : IPipelineBehavior<TRequest, TResult>
 {
     public async Task<TResult> HandleAsync(TRequest request, CancellationToken cancellationToken, Func<Task<TResult>> next)
