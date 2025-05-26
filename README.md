@@ -11,6 +11,14 @@ A lightweight, dependency-injected mediator library for .NET, supporting CQRS, P
 
 ---
 
+## Installation
+
+
+```
+dotnet add package LevapTech.SimpleMediator
+```
+---
+
 ## Getting Started
 
 ### 1. Register Services
