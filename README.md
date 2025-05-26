@@ -1,5 +1,9 @@
 # SimpleMediator
 
+[![NuGet](https://img.shields.io/nuget/v/LevapTech.SimpleMediator.svg)](https://www.nuget.org/packages/LevapTech.SimpleMediator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/)
+
 A lightweight, dependency-injected mediator library for .NET, supporting CQRS, Pub-Sub, and pipeline behaviors. SimpleMediator helps you decouple your application logic by handling commands, queries, and events through a clean, extensible interface.
 
 ## Features
