@@ -91,5 +91,4 @@ public class SimpleMediatorEventTests
         // Assert
         handlerMock.Verify(h => h.HandleAsync(@event, cancellationToken), Times.Once);
     }
-
 }
