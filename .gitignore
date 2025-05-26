@@ -8,3 +8,5 @@
 /Tests/LevapTech.SimpleMediator.Tests/bin/Debug/net8.0
 /Tests/LevapTech.SimpleMediator.Tests/obj
 /.vs/ProjectEvaluation
+/Samples/OrderApi/bin/Debug/net8.0
+/Samples/OrderApi/obj
